@@ -10,34 +10,71 @@
         color: #f00;
         /* background-color: rgba(199, 220, 254, 0.20) */
       }
-
       /* div {
         border: 1px solid green;
       }*/
 
       /* BIO BOXES */
+      .bio-wrapper {
+        font-size: 24px;
+        /* font-size: 20px; */
+        /* width: 1em; */
+      }
       .bio-box {
         border: 1px solid black;
-
+        font-size: 1rem;
+        /* width: 50%; */
       }
-
+      .bio-copy {
+        font-size: 1em;
+      }
       .bio-copy a {
         color: green;
       }
+      .bio-box h3 {
+        /* font-size: 1.5em; */
+      }
 
-      /* sets the background color of the whole page */
-      /* html {
-        background:red;
-      } */
+      /* HERO STYLES */
+      .full-hero {
+        background-color: #c7dbfc;
+        height: 80vh;
+        /* width: 100vw; */
+
+
+
+      /* to create square shapes
+        height: 50vw;
+        width: 50vw;
+      */
+      /* to reverse height and width */
+        /* height: 50vw; - set the height to size equal to 50% of browser window.*/
+        /* width: 50vh; -set the width to size equal to 50% of actual height */
+      }
+      h1 {
+        /* color: red;
+        padding: 55px;
+        text-align: center; */
+        /* font-size: 4vw; */
+        margin-top: 0;
+
+      }
+      /* reset the browser default margin settings */
+      html, body  {
+        margin: 0;
+        padding: 0;
+        /* font-size: 18px; */
+        /* background:red; */
+      }
 
       /* SOCIAL LINKS */
       .social-link {
-        /* background-color : rgba(150, 150, 150, 0.5); */
         color: blue;
-
+        /* background-color : rgba(150, 150, 150, 0.5); */
+        /* font-size: 1.5rem; */
       }
 
-  /* if a style (i.e. width) is applied multiple times to an element the final wins! */
+  /* if a style (i.e. width) is applied multiple times to the same element the final wins! */
   /* therefore, the bio-box width will be 100% of the page size */
       /* .bio-box {
         width: 75%;
@@ -74,69 +111,73 @@
     </style>
   </head>
   <body>
-    <h1>I'm an h1</h1>
-    <ul id="main-ul">
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-      <li>
-        <a href="https://example.com/">Link</a>
-      </li>
-    </ul>
+    <div class="full-hero hero-home">
+      <h1>I'm an h1</h1>
+      <ul id="main-ul">
+        <li>
+          <a href="https://example.com/" class="social-link">Link</a>
+        </li>
+        <li>
+          <a href="https://example.com/" class="social-link">Link</a>
+        </li>
+        <li>
+          <a href="https://example.com/" class="social-link">Link</a>
+        </li>
+      </ul>
+    </div>
     <h2>I'm an h2</h2>
     <!-- <div id="exec-bio" class="bio-box alert">
       <a href="https://example.com/">I'm a link</a>
     </div> -->
-    <div class="bio-box">
-      <h3><a class="social-link" href="https://twitter.com/mhartl">Michael Heartl</a></h3>
-      <div class="bio-copy">
-        <p>
-          Known for his dazzling charm, rapier wit, and unrivaled humility,
-          Michael is the creator of the
-          <a href="https://www.railstutorial.org/">Ruby on Rails
-          Tutorial</a> and principal author of the
-          <a href="https://learnenough.com/">
-          Learn Enough to Be Dangerous</a> introductory sequence. Michael
-          is also notorious as the founder of
-          <a href="http://tauday.com/">Tau Day</a> and author of
-          <a href="http://tauday.com/tau-manifesto"><em>The Tau
-          Manifesto</em></a>, but rumors that he's secretly a supervillain
-          are slightly exaggerated.
-        </p>
-      </div>
-    </div>
-    <div class="bio-box" >
-      <h3><a class="social-link" href="https://twitter.com/leedonahoe">Lee Donahoe</a></h3>
-      <div class="bio-copy">
-        <p>
-          When he's not literally swimming with sharks or hunting powder stashes on
-          his snowboard, you can find Lee in front of his computer designing
-          interfaces, doing front-end development, or writing some of the
-          interface-related Learn Enough tutorials.
-        </p>
-    </div>
-    </div>
-    <div class="bio-box">
-      <h3><a class="social-link" href="https://twitter.com/nickmerwin">Nick Merwin</a></h3>
-      <div class="bio-copy">
-        <p>
-          You may have seen him shredding guitar live with Capital Cities on Jimmy
-          Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
-          heart. He's just as happy shredding well-spec'd lines of code from a tour
-          bus as he is from his kitchen table.
-        </p>
-      </div>
-    </div>
-    <div class="bio-box">
-      <h3><a class="social-link" href="https://example.com/">??</a></h3>
-      <div class="bio-copy">
-        <p>
-          Future
-        </p>
-      </div>
+      <div class="bio-wrapper">
+        <div class="bio-box">
+          <h3><a class="social-link" href="https://twitter.com/mhartl">Michael Heartl</a></h3>
+          <div class="bio-copy">
+            <p>
+              Known for his dazzling charm, rapier wit, and unrivaled humility,
+              Michael is the creator of the
+              <a href="https://www.railstutorial.org/">Ruby on Rails
+              Tutorial</a> and principal author of the
+              <a href="https://learnenough.com/">
+              Learn Enough to Be Dangerous</a> introductory sequence. Michael
+              is also notorious as the founder of
+              <a href="http://tauday.com/">Tau Day</a> and author of
+              <a href="http://tauday.com/tau-manifesto"><em>The Tau
+              Manifesto</em></a>, but rumors that he's secretly a supervillain
+              are slightly exaggerated.
+            </p>
+          </div>
+        </div>
+        <div class="bio-box" >
+          <h3><a class="social-link" href="https://twitter.com/leedonahoe">Lee Donahoe</a></h3>
+          <div class="bio-copy">
+            <p>
+              When he's not literally swimming with sharks or hunting powder stashes on
+              his snowboard, you can find Lee in front of his computer designing
+              interfaces, doing front-end development, or writing some of the
+              interface-related Learn Enough tutorials.
+            </p>
+        </div>
+        </div>
+        <div class="bio-box">
+          <h3><a class="social-link" href="https://twitter.com/nickmerwin">Nick Merwin</a></h3>
+          <div class="bio-copy">
+            <p>
+              You may have seen him shredding guitar live with Capital Cities on Jimmy
+              Kimmel, Conan, or The Ellen Show, but rest assured Nick is a true nerd at
+              heart. He's just as happy shredding well-spec'd lines of code from a tour
+              bus as he is from his kitchen table.
+            </p>
+          </div>
+        </div>
+        <div class="bio-box">
+          <h3><a class="social-link" href="https://example.com/">??</a></h3>
+          <div class="bio-copy">
+            <p>
+              Future
+            </p>
+          </div>
+        </div>
     </div>
   </body>
 </html>
